@@ -23,7 +23,7 @@ p{
 	margin-bottom: 15px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #a9a9a9;
+	color: white;
 }
 
 .btn a {
@@ -45,10 +45,13 @@ p{
 .navbar{
 	width: 100%;
 	height: 65px;
-	position: absolute;
+	position: fixed;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 999;
+	background-color:rgb(70, 94, 32);
+	
 }
 
 .logo a{
@@ -72,10 +75,10 @@ p{
 
 /* banner_image */
 .banner_image{
-	/* background: url('images/backfin2.jpg') no-repeat top center; */
+	background: url('images/bc.jpg') no-repeat top center;
 	background-size: cover;
 	width: 100%;
-	height: 650px;
+	height:960px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -84,12 +87,14 @@ p{
 .banner_content{
 	text-align: center;
 	color: #fff;
+	padding-bottom: 20%;
 }
 
-.banner_content h1{
+.banner_content , h1{
 	text-transform: uppercase;
 	line-height: 38px;
 	margin-bottom: 15px;
+	text-align: center;
 }
 
 .banner_content h1 span{
@@ -110,11 +115,19 @@ p{
 .jobs{
 	background: #f5f5f5;
 }
+@keyframes example{
+	from{opacity:0;}
+	to{opacity: 1;}
+}
 
-.diff_services {
+.diff_services{
+	text-align: center;
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
+	animation-name: example;
+  animation-duration: 3s;
+  border-radius: 8px;
 }
 
 .diff_services .diff_services_item {
@@ -158,4 +171,17 @@ p{
 
 .footer a{
 	color: #fff;
+}
+.jobs p{
+	color:black;
+}
+
+img{
+	text-align: center;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+	animation-name: example;
+  animation-duration: 3s;
+  border-radius: 8px;
 }
