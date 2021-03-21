@@ -72,10 +72,10 @@ p{
 
 /* banner_image */
 .banner_image{
-	background: url('images/background.cms.jpg') no-repeat top center;
+	background: url('images/backfin2.jpg') no-repeat top center;
 	background-size: cover;
 	width: 100%;
-	height: 600px;
+	height: 650px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
